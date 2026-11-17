@@ -46,8 +46,8 @@ you have neither.
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/<you>/yt.git
-cd yt
+git clone https://github.com/6r66nin/youtube-local-downloader.git
+cd youtube-local-downloader
 
 # 1) dependencies (yt-dlp, ffmpeg, and node/deno only if missing)
 powershell -ExecutionPolicy Bypass -File .\setup-deps.ps1
@@ -69,8 +69,8 @@ download of a static ffmpeg build when winget is slow or blocked.
 ### macOS / Linux
 
 ```sh
-git clone https://github.com/<you>/yt.git
-cd yt
+git clone https://github.com/6r66nin/youtube-local-downloader.git
+cd youtube-local-downloader
 
 # dependencies
 brew install yt-dlp ffmpeg node        # macOS
