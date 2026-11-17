@@ -1,0 +1,19 @@
+# yt configuration. Copy to config.toml (install.ps1 / install.sh do it for you).
+# Read on every run: edit and save, no reinstall needed.
+
+# "~" is expanded to your home directory. The default is your Downloads folder.
+output_dir = "~/Downloads"
+
+default_quality = "best"          # best | 2160 | 1440 | 1080 | 720 | 480 | 360
+audio_format = "mp3"              # what `yt -a` uses when no format is given: mp3 | m4a
+rate_limit = ""                   # e.g. "8M" to avoid saturating your connection
+
+# Files land directly in output_dir. To group by channel instead, use:
+#   filename = "%(uploader)s/%(upload_date>%Y-%m-%d)s - %(title).120B [%(id)s].%(ext)s"
+filename = "%(upload_date>%Y-%m-%d)s - %(title).120B [%(id)s].%(ext)s"
+
+# --- optional ---------------------------------------------------------------
+# cookies_from_browser = "chrome"  # only if YouTube asks "confirm you're not a bot"
+# remote_components = "ejs:github" # JavaScript challenge solver (needed for real
+#                                  # formats; cached after the first run). Set to ""
+#                                  # to disable: only m3u8 formats will be offered.

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Your local settings and state: never committed.
+config.toml
+.archive
+.archive-audio
+.archive-*
+*.part
+*.ytdl
+*.temp
+
+# Downloaded media, in case you run yt from inside the repo.
+*.mp3
+*.m4a
+*.mp4
+*.webm
+*.mkv
+
+# Local-only design notes.
+descargador-youtube-local.md
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

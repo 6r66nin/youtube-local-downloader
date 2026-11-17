@@ -1,0 +1,4 @@
+#!/bin/sh
+# POSIX shim so `yt` works from any shell (Linux, macOS, WSL, Git Bash).
+# Make it executable: chmod +x yt
+exec python3 "$(dirname "$0")/yt.py" "$@"
